@@ -4,8 +4,11 @@ import java.io.PrintWriter;
 import jakarta.servlet.*;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
+import java.util.HashMap;
+import etu1905.framework.Mapping;
 
 public class FrontServlet extends HttpServlet{
+    HashMap<String, Mapping> mappingUrls;  
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
 response.setContentType("text/html;charset=UTF-8");
